@@ -25,6 +25,5 @@ before_script:
   - yes | sdkmanager "build-tools;28.0.2" > /dev/null
   - yes | sdkmanager "platforms;android-28" > /dev/null
   - yes | sdkmanager "extras;google;m2repository" > /dev/null
-  - yes | sdkmanager --licenses > /dev/null
 script:
   - cd android && ./gradlew assembleDebug -q
